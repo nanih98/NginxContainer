@@ -4,6 +4,7 @@ LABEL NAME="nanih98/nginx:1.19.9-alpine"
 # Custom healthz location for readiness and liveness
 RUN mkdir /usr/share/nginx/html/healthz 
 
+RUN groupmod -g 0 nginx
 
 # Copy custom files
 COPY server.conf /etc/nginx/conf.d/

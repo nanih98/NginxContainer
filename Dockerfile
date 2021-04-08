@@ -18,6 +18,8 @@ RUN touch /var/run/nginx.pid && \
 
 WORKDIR /usr/share/nginx/html
 
+EXPOSE 8080
+
 USER nginx
 
 #NGINX DAEMON

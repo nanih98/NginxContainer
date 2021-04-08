@@ -11,7 +11,8 @@ COPY --chown=755:755 healthz.html /usr/share/nginx/html/healthz
 
 RUN touch /var/run/nginx.pid && \
   chown -R nginx:nginx /var/run/nginx.pid && \
-  chown -R nginx:nginx /var/cache/nginx
+  chown -R nginx:nginx /var/cache/nginx && \
+  chown -R nginx:nginx /var/log/nginx
 
 USER nginx
 

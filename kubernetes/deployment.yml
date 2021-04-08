@@ -80,4 +80,4 @@ spec:
           service:
             name: nginx
             port:
-              number: 8080e
+              number: 8080

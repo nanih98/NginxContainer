@@ -16,6 +16,8 @@ RUN touch /var/run/nginx.pid && \
   chown -R nginx:nginx /etc/nginx/conf.d &&\
   chown -R nginx:nginx /usr/share/nginx/html
 
+WORKDIR /usr/share/nginx/html
+
 USER nginx
 
 #NGINX DAEMON
